@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Meal Is Ready</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meal Is Ready - Discover Delicious Food & Recipes Worldwide</title>
+<meta name="description" content="Discover delicious recipes from around the world. Explore Indian, Italian, Japanese and more cuisines with step-by-step instructions.">
+<meta name="keywords" content="recipes, food, meals, cooking, Indian food, Italian pasta, sushi, tacos">
+<meta name="author" content="Meal Is Ready">
+<meta property="og:title" content="Meal Is Ready - Food Discovery">
+<meta property="og:description" content="Explore delicious recipes from Indian, Italian, Japanese and more cuisines.">
+<meta property="og:type" content="website">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Meal Is Ready",
+  "url": "https://yourwebsite.com",
+  "description": "Discover delicious recipes from around the world"
+}
+</script>
 </head>
 <body>
 
-<nav>
+<nav class="navbar">
 <div class="logo">🍴 Meal Is Ready</div>
-<div class="links">
+<button class="hamburger" id="hamburger">☰</button>
+<div class="links" id="navLinks">
 <a href="index.html">Home</a>
 <a href="search.html">Search</a>
 <a href="random.html">Random</a>
@@ -20,7 +38,7 @@
 <section class="hero">
 <h1>Discover Delicious Food Worldwide</h1>
 <p>Explore Indian, Italian, Japanese & More 🍕</p>
-<a href="search.html" class="btn">Explore Now</a>
+<a href="search.html" class="btn" role="button">Explore Now</a>
 </section>
 
 <section class="featured">
@@ -29,22 +47,22 @@
 <div class="food-grid">
 
 <div class="food-card">
-<img src="https://images.unsplash.com/photo-1603898037225-1c72e3b5081f">
+<img src="https://images.unsplash.com/photo-1603898037225-1c72e3b5081f" alt="Butter Chicken - Indian spiced chicken in creamy tomato sauce">
 <h3>Butter Chicken</h3>
 </div>
 
 <div class="food-card">
-<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Italian Pasta - Fresh pasta with Mediterranean sauce">
 <h3>Italian Pasta</h3>
 </div>
 
 <div class="food-card">
-<img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36">
+<img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36" alt="Sushi - Japanese rolls with seafood and vegetables">
 <h3>Sushi</h3>
 </div>
 
 <div class="food-card">
-<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Mexican Tacos - Traditional tacos with meat and toppings">
 <h3>Mexican Tacos</h3>
 </div>
 
@@ -55,5 +73,6 @@
 <p>© 2026 Meal Is Ready | Powered by TheMealDB API</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

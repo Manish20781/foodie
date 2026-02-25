@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Search Meals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Meals - Find Recipes by Name | Meal Is Ready</title>
+<meta name="description" content="Search for your favorite meals and recipes. Find detailed cooking instructions and ingredients.">
+<meta name="keywords" content="search meals, recipes, cooking instructions, meal ideas">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
+<nav class="navbar">
+<div class="logo">🍴 Meal Is Ready</div>
+<button class="hamburger" id="hamburger">☰</button>
+<div class="links" id="navLinks">
 <a href="index.html">Home</a>
 <a href="search.html">Search</a>
 <a href="random.html">Random</a>
 <a href="categories.html">Categories</a>
 <a href="about.html">About</a>
+</div>
 </nav>
 
-<div class="search-box">
-<input type="text" id="searchItem" placeholder="Search Meal">
-<button onclick="searchMeal()">Search</button>
-</div>
+<section class="search-box">
+<h1>Search Your Favorite Meals</h1>
+<input type="text" id="searchItem" placeholder="Search Meal" aria-label="Search for meals">
+<button onclick="searchMeal()" class="btn">Search</button>
+</section>
 
 <div class="main" id="main"></div>
 

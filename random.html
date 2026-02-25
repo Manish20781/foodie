@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Random Meals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Meals - Get Daily Meal Inspiration | Meal Is Ready</title>
+<meta name="description" content="Discover random meal suggestions daily. Get inspired with new recipes and cooking ideas.">
+<meta name="keywords" content="random meals, meal inspiration, daily recipes, food discovery">
 <link rel="stylesheet" href="style.css">
 </head>
 <body onload="loadRandomMeals()">
 
-<nav>
+<nav class="navbar">
+<div class="logo">🍴 Meal Is Ready</div>
+<button class="hamburger" id="hamburger">☰</button>
+<div class="links" id="navLinks">
 <a href="index.html">Home</a>
 <a href="search.html">Search</a>
 <a href="random.html">Random</a>
 <a href="categories.html">Categories</a>
 <a href="about.html">About</a>
+</div>
 </nav>
 
-<h2 style="text-align:center">Today's Random Meals 🍲</h2>
+<h1 style="text-align:center;padding:30px 20px;">Today's Random Meals 🍲</h1>
 <div class="main" id="main"></div>
 
 <script src="script.js"></script>

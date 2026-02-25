@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Meal Categories</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meal Categories - Browse Recipes by Type | Meal Is Ready</title>
+<meta name="description" content="Browse meals by category. Find Indian, Italian, Asian, and international cuisine recipes.">
+<meta name="keywords" content="meal categories, cuisine types, food categories, recipes by type">
 <link rel="stylesheet" href="style.css">
 </head>
 <body onload="loadCategories()">
 
-<nav>
+<nav class="navbar">
+<div class="logo">🍴 Meal Is Ready</div>
+<button class="hamburger" id="hamburger">☰</button>
+<div class="links" id="navLinks">
 <a href="index.html">Home</a>
 <a href="search.html">Search</a>
 <a href="random.html">Random</a>
 <a href="categories.html">Categories</a>
 <a href="about.html">About</a>
+</div>
 </nav>
 
-<h2 style="text-align:center">Meal Categories</h2>
+<h1 style="text-align:center;padding:30px 20px;">Meal Categories</h1>
 <div class="main" id="main"></div>
 
 <script src="script.js"></script>
